@@ -10,9 +10,9 @@ yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for electron production
 ```
-yarn build
+yarn electron:build
 ```
 
 ### Lints and fixes files
