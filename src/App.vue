@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <tool-menu-bar></tool-menu-bar>
+    <workspace-canvas></workspace-canvas>
+    <file-menu-bar></file-menu-bar>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ToolMenuBar from '@/components/ToolMenuBar.vue'
+import WorkspaceCanvas from '@/components/Workspace.vue'
+import FileMenuBar from '@/components/FileMenuBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'tool-menu-bar': ToolMenuBar,
+    'workspace-canvas': WorkspaceCanvas,
+    'file-menu-bar': FileMenuBar
   }
 }
 </script>
